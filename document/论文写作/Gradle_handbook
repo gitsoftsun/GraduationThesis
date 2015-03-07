@@ -1,0 +1,9 @@
+Question :  
+	Q1: gradle怎样指定主清单属性？
+	A: http://blog.csdn.net/hiarcs/article/details/6198945 可以解决配置 Main-Class 的问题， 但是会出现新的问题-Main-class找不到的问题， 也就是classpath配置的问题
+Gradle 创建java项目：
+	1. 首先创建一个项目文件夹（mkdir Gradle_projectName）， 并使Gradle Task可用（gradle task）
+	2. 创建一个build.gradle文件(touch build.gradle);若创建java工程，那么就在build.gradle中输入 apply plugin: 'java'
+	3. 创建一个文件夹src（放置源代码）
+	4. 然后在项目根目录（project_name）下运行gradle build将项目打包为project_name.jar文件；
+	5. 依赖（和maven的包依赖管理比较像）

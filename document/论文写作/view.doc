@@ -1,0 +1,13 @@
+﻿推荐系统UI系统设计与实现
+
+系统目标：
+	
+	1. 展示推荐单子
+	2. 收集用户行为数据
+系统架构
+	spring + mybatis + ？（struts/springMVC / ELSE）+?（前端和后台数据分离）(AngularJS/ Bootstrap)
+
+系统实施：
+	0. 创建webapp 使用maven管理
+	1. spring 的配置
+	
