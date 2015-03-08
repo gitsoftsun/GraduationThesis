@@ -24,8 +24,8 @@
   <packaging>war</packaging>
 
   <name>view_ui</name>
-  <groupId>org.zju.cst</groupId>
-  <artifactId>view_ui</artifactId>
+  <groupId>org.zju.cst.recommand</groupId>
+  <artifactId>recommand_view_ui</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <build>
