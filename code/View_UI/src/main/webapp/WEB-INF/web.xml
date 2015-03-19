@@ -25,6 +25,10 @@
          xmlns="http://java.sun.com/xml/ns/j2ee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:/spring/view-servlet.xml classpath:/spring/applicationcontext-mybatis.xml</param-value>
+    </context-param>
 
   <!-- Servlet Filters ================================================ -->
 
@@ -85,23 +89,29 @@
     - to support Springs and Cocoon custom bean scopes like the request scope or the
     - session scope.
     -->
-  <listener>
-    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
-  </listener>
+  <!--<listener>-->
+    <!--<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>-->
+  <!--</listener>-->
 
   <!-- Servlet Configuration ========================================== -->
 
   <!--
     - Servlet that dispatches requests to the Spring managed block servlets
     -->
-  <servlet>
-    <description>Cocoon blocks dispatcher</description>
-    <display-name>DispatcherServlet</display-name>
-    <servlet-name>DispatcherServlet</servlet-name>
-    <servlet-class>org.apache.cocoon.servletservice.DispatcherServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-
+  <!--<servlet>-->
+    <!--<description>Cocoon blocks dispatcher</description>-->
+    <!--<display-name>DispatcherServlet</display-name>-->
+    <!--<servlet-name>DispatcherServlet</servlet-name>-->
+    <!--<servlet-class>org.apache.cocoon.servletservice.DispatcherServlet</servlet-class>-->
+    <!--<load-on-startup>1</load-on-startup>-->
+  <!--</servlet>-->
+    <servlet>
+        <servlet-name>view</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
   <!-- URL space mappings ============================================= -->
 
   <!--
@@ -110,10 +120,14 @@
     - (like integration with proprietary webapps or servlets) you might have
     - to change this parameter.
     -->
-  <servlet-mapping>
-    <servlet-name>DispatcherServlet</servlet-name>
-    <url-pattern>/*</url-pattern>
-  </servlet-mapping>
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>DispatcherServlet</servlet-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+  <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
 
 </web-app>
         
