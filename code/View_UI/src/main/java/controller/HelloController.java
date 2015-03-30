@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by Lzy_pc on 2015/3/19.
  */
 @Controller
+@RequestMapping("/hello")
 public class HelloController {
     @RequestMapping({"/"})
     public String printWelcome(ModelMap model){

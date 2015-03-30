@@ -27,7 +27,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:/spring/view-servlet.xml classpath:/spring/applicationcontext-mybatis.xml</param-value>
+        <param-value>classpath:/spring/applicationcontext-mybatis.xml</param-value>
     </context-param>
 
   <!-- Servlet Filters ================================================ -->
@@ -110,6 +110,10 @@
         <servlet-class>
             org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:/spring/view-servlet.xml</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
   <!-- URL space mappings ============================================= -->
