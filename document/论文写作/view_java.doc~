@@ -1,9 +1,0 @@
-
-spring - 复习（DONE）
-1. 父类对象 不能调用子类方法； 而Bash bash = new sub() 可以调用子类方法，因为bash 属于子类对象
-2. 依赖注入： 通过构造函数/属性注入； 实现松耦合
-	依赖注入的实现： 将接口类型注入到类中， 有spring来管理对象即（对象的创建和组装）； 具体来讲： webapp启动先装载spring上下文（xml配置）， 然后在context.getBean("CLASS_NAME")创建对象； 不能通过new的方式来创建对象；
-3. 应用切面（AOP编程）： 允许你把遍布应用各处的功能分离出来形成可用的组件；
-4. 在spring应用中， 对象由spring容器 创建， 装配和管理；spring容器的实现（两种）-1) bean工厂（org.springframework.beans.factory.BeanFactory); 2.应用上下文（application- org.springframework.context.ApplicationContext）; 一般使用 应用上下文
-
-Gradle 了解
