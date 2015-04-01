@@ -7,7 +7,7 @@
      http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-3.0.xsd
         ">
-    <context:component-scan base-package="dao"/>
+    <context:component-scan base-package="cst.dao"/>
 
     <!--JDBC DATA SOURCE-->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -24,11 +24,10 @@
                 <value>classpath:dao/UesrDaoMapper.xml</value>
             </list>
         </property>
-        <property name="typeAliasesPackage" value="dao"></property>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="dao"></property>
+        <property name="basePackage" value="cst.dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 </beans>

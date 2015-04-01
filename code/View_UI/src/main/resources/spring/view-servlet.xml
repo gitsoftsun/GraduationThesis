@@ -13,7 +13,7 @@
     <!--激活controller模式-->
     <mvc:annotation-driven/>
 
-    <context:component-scan base-package="controller"></context:component-scan>
+    <context:component-scan base-package="cst.controller"></context:component-scan>
 
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
 
