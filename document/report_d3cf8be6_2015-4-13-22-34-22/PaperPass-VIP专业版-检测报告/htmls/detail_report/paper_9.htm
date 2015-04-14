@@ -1,0 +1,541 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>PaperPass 最权威中文论文抄袭检测系统</title>
+<style type="text/css">
+<!--
+user_icon {
+color: #FFFFFF;
+}
+html
+{
+overflow-x:hidden;
+overflow-y:auto;
+}
+body,td,th {
+font-family: "微软雅黑";
+font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: "宋体";
+}
+p{
+margin-bottom:10px;
+}
+demo_padding {
+line-height: 30px;
+}
+.zhengwen {
+padding-right: 15px;
+padding-left: 5px;
+padding-bottom:100px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+}
+.zhengwencenter {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+text-align:center
+}
+.neikuang {
+background-color: #EBEBEB;
+border: 1px solid #999999;
+padding-right: 10px;
+padding-left: 10px;
+margin-top:10px;
+margin-left:25px;
+width:300px;
+}
+.shubu{
+height: 20px;
+width: 20px;
+margin-left:25px;
+background-color: #FFFFFF;
+border: 1px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+color: #666666;
+}
+a.red:link {color:#FF0000}
+a.red:visited {color:#FF0000}
+a.red:hover {color:#000000}
+a.red:active {color:#000000}
+
+a.orange:link {color:#FF6600}
+a.orange:visited {color:#FF6600}
+a.orange:hover {color:#000000}
+a.orange:active {color:#000000}
+
+a.dark:link {color:#666666}
+a.dark:visited {color:#666666}
+a.dark:hover {color:#000000}
+a.dark:active {color:#000000}
+
+a.pagelink:hover {color:#000000}
+a.pagelink:active {color:#000000}
+
+.green{color:#008000}
+.gray{color:#666666}
+.red{color:#FF0000}
+.orange{color:#FF6600}
+a{TEXT-DECORATION:none}
+
+-->
+</style>
+</head>
+<body>
+
+
+<div class="zhengwen">
+<div>
+<span style="margin-left:25px"></span>
+[
+<a class="pagelink" href="paper_1.htm">首页</a>
+<a class="pagelink" href="paper_8.htm">上一页</a>
+<a class="pagelink" href="#">下一页</a>
+<a class="pagelink" href="paper_9.htm">尾页</a>
+页码：9/9页
+]
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">397</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>推荐结果/推荐理由展示</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">398</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>系统根据具体的条件如：</span><span class='green'>推荐物品的数量， 推荐物品信息的选择， 推荐物品更新时间间隔等因素从系统中返回推荐结果， 并附加推荐解释，也就是推荐理由。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">399</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>获取浏览历史推荐结果：</span><a href='../sentence_detail/782.htm' target='right' class='orange' >根据ID（mac地址/用户ID）获取该用户关于浏览记录的推荐。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">400</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>获取销售排行推荐结果：</span><span class='green'>根据物品的销售量将物品进行排序并输出排名最高的N件物品。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">401</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>获取物品组合推荐：</span><span class='green'>物品详情页中获取与物品相关的物品， 加入组合推荐栏目中。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">402</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>远程接口与用户安全设计</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">403</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>远程接口</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">404</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/789.htm' target='right' class='red' >远程接口调用是系统与系统之间的通信机制，它的另一种理解就是进程间的通信。</a><a href='../sentence_detail/790.htm' target='right' class='red' >做分布式系统的开发，远程调用技术是其核心技术。</a><a href='../sentence_detail/791.htm' target='right' class='red' >远程调用技术可以将一组计算机系统形成一个网络系统，对外提供整体服务，那么这一群的计算机系统就构成了一个更大型，性能更高的计算机系统。</a><a href='../sentence_detail/792.htm' target='right' class='orange' >展现系统的远程接口设计应符合以下这些要求：</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">405</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>通信技术:</span><a href='../sentence_detail/794.htm' target='right' class='red' >远程调用就是通过网络技术将不同系统构成一个整体，因此通信技术是其重点，通信技术我这里选择的是 Netty技术，</a><a href='../sentence_detail/795.htm' target='right' class='red' > Netty提供异步的、事件驱动的网络应用程序框架和工具，用以快速开发高性能、高可靠性的网络服务器和客户端程序。</a><a href='../sentence_detail/796.htm' target='right' class='red' >Netty会让我们开发通信程序变得简单，高效，其效率也是非常好的，同时它还支持多种不同的网络协议。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">406</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/797.htm' target='right' class='red' >序列化和反序列化技术：</a><a href='../sentence_detail/798.htm' target='right' class='red' > java的序列化技术是指将对象转换为 byte数据，这些数据可以被还原为 java对象，</a><a href='../sentence_detail/799.htm' target='right' class='red' >这种还原的过程就是反序列化了，该机制可以自动处理不同操作系统之间的差异，</a><a href='../sentence_detail/800.htm' target='right' class='red' >例如 window下序列化的对象，可以在 linux上进行重新构建。</a><a href='../sentence_detail/801.htm' target='right' class='red' > Java的 JDK里自带了一个序列化和反序列化机制，熟悉 hadoop的人知道 hadoop设计了一套序列化和反序列化机制，</a><a href='../sentence_detail/802.htm' target='right' class='red' >为什么 hadoop作者不选择使用 java自带的序列化机制，这是因为 java序列化机制非常复杂，复杂带来效率低下，</a><a href='../sentence_detail/803.htm' target='right' class='red' > java的序列化机制还有一个重要的缺点就是它序列化的数据量会非常大，因为 java序列化的时候会附带太多该对象的相关信息，</a><a href='../sentence_detail/804.htm' target='right' class='red' >过大的数据量就会影响网络传输的效率，因此 hadoop自己设计了一套序列化和反序列化机制，</a><a href='../sentence_detail/805.htm' target='right' class='red' > hadoop不同节点之间的通信也是一种远程调用机制，因此我们发现好的序列化和反序列化技术对于远程调用是相当重要的。</a><a href='../sentence_detail/806.htm' target='right' class='red' >我们公司的远程调用框架序列化技术有两种一种就是 java自带的序列化和反序列化机制，</a><a href='../sentence_detail/807.htm' target='right' class='red' >一种是 hessian技术，它是一种更加高效的序列化和反序列化技术。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">407</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>压缩技术：</span><a href='../sentence_detail/809.htm' target='right' class='red' >做网络编程，最稀缺的资源就是宽带资源，如果传输数据过大，那么对数据的压缩就会显得十分重要，</a><a href='../sentence_detail/810.htm' target='right' class='red' >这里我推荐一个压缩技术 snappy，它是一种高效的压缩和解压缩包，谷歌公司内部广泛使用的一种压缩技术。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">408</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>非侵入式：</span><a href='../sentence_detail/812.htm' target='right' class='red' >这个也可以叫做松耦合，对于 java的 web开发，最好的解耦方式就是使用 spring技术，</a><a href='../sentence_detail/813.htm' target='right' class='red' >当我们系统里把远程调用框架引入后，配置好相关的参数，我们可以把用于远程调用的方法定义在 spring的配置文件里，</a><a href='../sentence_detail/814.htm' target='right' class='red' >那么在程序里调用的时候，利用 spring直接获取这个 bean，那么对于远程调用的开发就和我们在 action里调用 server的方法没啥区别了。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">409</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>高并发的技术：</span><a href='../sentence_detail/816.htm' target='right' class='red' >远程调用技术一定会是多线程，只有这样才能满足多个并发的处理请求， java在1.5的版本里提供了一个 Executor框架，</a><a href='../sentence_detail/817.htm' target='right' class='red' >它在线程开发里引入了任务的概念，使得多线程的程序开发会更加合理和可控，想让线程更加有效率，</a><a href='../sentence_detail/818.htm' target='right' class='red' >池的技术也是并不可少的， apache的 common- pool是一个非常好的池技术，我们可以将线程都预先创建好，</a><span class='green'>然后放入到 common- pool池里进行管理。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">410</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>负载均衡：</span><a href='../sentence_detail/821.htm' target='right' class='red' >分布式系统都离不开负载均衡，好的负载均衡可以充分利用好不同服务器的计算资源，提供系统的并发量和运算能力，</a><a href='../sentence_detail/822.htm' target='right' class='red' >对于网站而言（我们公司现在网站服务器不是太多）少于10台服务器可以使用两种策略：</a><a href='../sentence_detail/823.htm' target='right' class='red' >一种是简单轮询，比如有6台服务端，我们会把第一个请求给第一台服务器，第二个请求给第二台，依次类推，等6台循环完毕，又从第一台开始；</a><a href='../sentence_detail/824.htm' target='right' class='red' >第二种是随机方式，即使用random函数，当然更多的服务器我就不知道有什么轮询机制比较好。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">411</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>用户安全</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">412</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/826.htm' target='right' class='red' >为了保障信息的机密性、完整性、可用性和可控性，必须采用相关的技术手段。</a><a href='../sentence_detail/827.htm' target='right' class='red' >这些技术手段是信息安全体系中直观的部分，任何一方面薄弱都会产生巨大的危险。</a><a href='../sentence_detail/828.htm' target='right' class='red' >因此，应该合理部署、互相联动，使其成为一个有机的整体。</a><span class='green'>具体的技术介绍如下：</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">413</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>加解密技术。</span><a href='../sentence_detail/831.htm' target='right' class='red' >在传输过程或存储过程中进行信息数据的加解密，典型的加密体制可采用对称加密和非对称加密。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">414</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>VPN技术。</span><a href='../sentence_detail/833.htm' target='right' class='red' >VPN即虚拟专用网，通过一个公用网络(通常是因特网)建立一个临时的、安全的连接．是一条穿过混乱的公用网络的安全、稳定的隧道。</a><a href='../sentence_detail/834.htm' target='right' class='red' >通常VPN是对企业内部网的扩展，可以帮助远程用户、公司分支机构、商业伙伴及供应商同公司的内部网建立可信的安全连接，并保证数据的安全传输。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">415</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>防火墙技术。</span><a href='../sentence_detail/836.htm' target='right' class='red' >防火墙在某种意义上可以说是一种访问控制产品。</a><a href='../sentence_detail/837.htm' target='right' class='red' >它在内部网络与不安全的外部网络之间设置障碍， 防止外界对内部资源的非法访问，以及内部对外部的不安全访问入侵检测技术。</a><a href='../sentence_detail/838.htm' target='right' class='red' >人侵检测技术IDS是防火墙的合理补充，帮助系统防御网络攻击，扩展了系统管理员的安全管理能力，提高了信息安全基础结构的完整性。</a><a href='../sentence_detail/839.htm' target='right' class='red' >人侵检测技术从计算机网络系统中的若干关键点收集信息，并进行分析，检查网络中是否有违反安全策略的行为和遭到袭击的迹象。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">416</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>安全审计技术。</span><span class='green'>包含日志审计和行为审计。</span><a href='../sentence_detail/842.htm' target='right' class='red' >日志审计协助管理员在受到攻击后察看网络日志，从而评估网络配置的合理性和安全策略的有效性，追溯、分析安全攻击轨迹。</a><span class='green'>并能为实时防御提供手段。</span><a href='../sentence_detail/844.htm' target='right' class='red' >通过对员工或用户的网络行为审计，可确认行为的规范性，确保管理的安全。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">417</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>本章小结</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">418</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/846.htm' target='right' class='orange' >本章主要内容是整个推荐系统的设计实现， 其中包含推荐引擎， 推荐展示系统的设计。</a><span class='green'>推荐引擎技术是一种新的信息传播方式，将推荐引擎分为两部分一部分是推荐算法模块， 另一部分属于规则模块， 其中有热门排行， 还有一些规则组成；</span><a href='../sentence_detail/848.htm' target='right' class='orange' > 两部分互补组成推荐的主要部分， 再经过过滤和排名得到最终的推荐列表。</a><a href='../sentence_detail/849.htm' target='right' class='orange' >当然主要是解决推荐引擎的整体架构与技术架构实现。</a><span class='green'>再有就是对展示系统的详细设计， 其中主要包含是系统的总体技术架构， 系统功能的描述， 分析， 具体接口的定义等， 其中有用户行为模块， 推荐结果模块， 远程接口与用户安全设计。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">419</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>总结与展望</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">420</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/852.htm' target='right' class='orange' >推荐系统是解决信息过载的一种解决方案，同时也是一种连接用户和内容的信息系统，一方面它帮助用户发现他们潜在的兴趣点，</a><span class='green'>另一方面它能够帮助信息提供者将内容投放给对相应的用户。</span><a href='../sentence_detail/854.htm' target='right' class='orange' >推荐系统的常用方法是通过分析用户的历史行为来发现他们将来的行为。</a><span class='green'>但是在国内并没有一个能够为行业提供推荐的独立推荐公司， 或者推荐系统；</span><span class='green'>百度在广告方面的推荐具有一定的优势， 但不提供对外服务。</span><a href='../sentence_detail/857.htm' target='right' class='orange' >因此本文主要是推荐系统的设计与实践， 为提供独立的推荐系统做出一点力量。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">421</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>推荐系统总结</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">422</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/859.htm' target='right' class='orange' >本文主要的工作和贡献包括一下两方面：</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">423</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>通过 SVD方法计算用户的与测评分，又使用 Top- N推荐对隐形反馈数据计算用户-物品的权值，</span><span class='green'>返回用户的推荐列表，并在其原有的算法中加入一个新的时间元素，形成一个合适的算法。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">424</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/862.htm' target='right' class='orange' >对推荐引擎分析， 日志系统以及展现系统分别进行了分析和设计；</a><span class='green'>从使用的相关技术到系统的技术架构， 再到相关接口的设计，每一点都做了详细和深入的探索。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">425</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>推荐系统展望</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">426</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>本文对Top-N做了一定的优化， 并对整个推荐系统的实践做了相应的阐述， 但是针对用户的组合推荐和多特征并行处理的推荐并没有相应的实践。</span><a href='../sentence_detail/866.htm' target='right' class='orange' >希望在以后的实践中对推荐算法做进一步的改进， 提高推荐算法的计算性能， 算法推荐的精准度以及线上的相应时间。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">427</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>参考文献</span>
+</p>
+</div>
+
+
+<div>
+<span style="margin-left:25px"></span>
+[
+<a class="pagelink" href="paper_1.htm">首页</a>
+<a class="pagelink" href="paper_8.htm">上一页</a>
+<a class="pagelink" href="#">下一页</a>
+<a class="pagelink" href="paper_9.htm">尾页</a>
+页码：9/9页
+]
+</div>
+
+<br><br><br>
+<div style="margin-left:25px">
+
+<img src="../../images/guanwang.gif">
+</div>
+</div>
+
+
+<div class="zhengwencenter">
+<p>
+检测报告由<a href="http://www.paperpass.com/" target="_blank">PaperPass</a>文献相似度检测系统生成
+</p>
+<p>
+Copyright © 2007-2015 PaperPass
+</p>
+</div>
+<div style="margin-bottom:400px"></div>
+</body>
+</html>

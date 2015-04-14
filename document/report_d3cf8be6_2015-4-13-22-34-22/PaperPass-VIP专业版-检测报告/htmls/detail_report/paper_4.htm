@@ -1,0 +1,606 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>PaperPass 最权威中文论文抄袭检测系统</title>
+<style type="text/css">
+<!--
+user_icon {
+color: #FFFFFF;
+}
+html
+{
+overflow-x:hidden;
+overflow-y:auto;
+}
+body,td,th {
+font-family: "微软雅黑";
+font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: "宋体";
+}
+p{
+margin-bottom:10px;
+}
+demo_padding {
+line-height: 30px;
+}
+.zhengwen {
+padding-right: 15px;
+padding-left: 5px;
+padding-bottom:100px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+}
+.zhengwencenter {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+text-align:center
+}
+.neikuang {
+background-color: #EBEBEB;
+border: 1px solid #999999;
+padding-right: 10px;
+padding-left: 10px;
+margin-top:10px;
+margin-left:25px;
+width:300px;
+}
+.shubu{
+height: 20px;
+width: 20px;
+margin-left:25px;
+background-color: #FFFFFF;
+border: 1px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+color: #666666;
+}
+a.red:link {color:#FF0000}
+a.red:visited {color:#FF0000}
+a.red:hover {color:#000000}
+a.red:active {color:#000000}
+
+a.orange:link {color:#FF6600}
+a.orange:visited {color:#FF6600}
+a.orange:hover {color:#000000}
+a.orange:active {color:#000000}
+
+a.dark:link {color:#666666}
+a.dark:visited {color:#666666}
+a.dark:hover {color:#000000}
+a.dark:active {color:#000000}
+
+a.pagelink:hover {color:#000000}
+a.pagelink:active {color:#000000}
+
+.green{color:#008000}
+.gray{color:#666666}
+.red{color:#FF0000}
+.orange{color:#FF6600}
+a{TEXT-DECORATION:none}
+
+-->
+</style>
+</head>
+<body>
+
+
+<div class="zhengwen">
+<div>
+<span style="margin-left:25px"></span>
+[
+<a class="pagelink" href="paper_1.htm">首页</a>
+<a class="pagelink" href="paper_3.htm">上一页</a>
+<a class="pagelink" href="paper_5.htm">下一页</a>
+<a class="pagelink" href="paper_9.htm">尾页</a>
+页码：4/9页
+]
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">179</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/294.htm' target='right' class='orange' >评分预测问题的任务就是计算给用户对给定物品评分。</a><a href='../sentence_detail/295.htm' target='right' class='red' >解决该问题主要依赖于建立用户特征模型。</a><a href='../sentence_detail/296.htm' target='right' class='orange' >传统的推荐系统在建立用户兴趣模型时一般基于静态的特征用户，而只建立用户的静态特征模型。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">180</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/297.htm' target='right' class='orange' >比如，用户近期评分行为对用户很久之前的评分行为往往具有更高的参考价值，在对计算用户的评分的时候。</a><a href='../sentence_detail/298.htm' target='right' class='orange' >物品的流行程度也受发布时间或者更新时间的影响，一部新发布的iPhone的之前发布的版本更加受欢迎。</a><span class='green'>此类的时间上下文因素在互联网中有很多，而如何利用这些时间因素提高系统预测的精度，设计符合用户物品特征变化的动态推荐系统，是近年来推荐领域研究的热门问题。</span><a href='../sentence_detail/300.htm' target='right' class='orange' >下面我们将就对评分预测问题建立用户物品特征模型提高评分计算的精度进行讨论。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">181</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>本节的主要内容如下：</span><a href='../sentence_detail/302.htm' target='right' class='red' >计算用户特征关系最常用的模型是基于矩阵分解的模型(也被称为Latent Factor Model)。</a><a href='../sentence_detail/303.htm' target='right' class='red' >本章提出的相关模型也是建立在矩阵分解模型的基础之上的，因此本节将首先介绍与时间上下文无关的矩阵分解模型。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">182</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/304.htm' target='right' class='orange' >推荐系统的静态用户特征矩阵分解模型</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">183</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/305.htm' target='right' class='orange' >静态用户兴趣模型，即与时间因素无关的用户兴趣特征模型，矩阵分解模型也可以认为是对用户-物品二维模型的数据不全问题。</a><a href='../sentence_detail/306.htm' target='right' class='orange' > 详细说明一下， 用户对物品的评分仅仅占居了用户，物品的很小的比例。</a><span class='green'>无论是单个用户对物品的评价总数占物品总数的比例， 还是多个用户对一个物品的评价中多个用户与用户总数的比例；</span><span class='green'>这些都是很小的比例；</span><a href='../sentence_detail/309.htm' target='right' class='orange' > 因此用户和物品组成的矩阵可以说是一个稀疏矩阵；</a><span class='green'>我们现在的任务就是讲此稀疏矩阵所有坐标都给补全了。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">184</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>问题数学定义</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">185</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/312.htm' target='right' class='orange' >定义D={(u，i，r)}为用户u对物品i的评分的集合，设有N名用户， M件物品， 我们组成一个RN*M的二维稀疏矩阵；</a><a href='../sentence_detail/313.htm' target='right' class='orange' > 在图2-1中我们看到一个简单的用户物品评分矩阵，一行代表一个用户对所有物品的评分，空格代表没有评分， 也是需要我们计算的。</a><span class='green'>比如， u1对i1， i4 有评分， 但是对于i2， i3，i5都没有评分。</span><a href='../sentence_detail/315.htm' target='right' class='orange' >下面我们通过奇异值分解算法来计算用户评分。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">186</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>图 2 1用户-物品评分矩阵</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">187</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>奇异值分解算法（SVD）</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">188</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>该算法的主要计算步骤是：</span><span class='green'>首先为每个缺失位置初始化一个初始值， 比如一个用户对所有用户评分之和的平均值：</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">189</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>R(u，i)=  (∑?</span><span class='green'>r_ui )/(|N(i)|)</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">190</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/322.htm' target='right' class='orange' >其中N(i)代表用户对物品评价的个数；</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">191</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/323.htm' target='right' class='orange' >或者也可以通过多个用户对一个物品的评分之和的平均值：</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">192</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>R(u，i)=(∑?</span><span class='green'>r_ui )/(|N(u)|)</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">193</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/326.htm' target='right' class='orange' >其中N(u)代表对物品i有评分的用户的个数。</a><a href='../sentence_detail/327.htm' target='right' class='orange' >将评分不全之后的矩阵记为R ?</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">194</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>然后SVD将R ?</span><span class='green'>分解为三个矩阵相乘：</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">195</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>R ?</span><span class='green'>=U^T*S*V</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">196</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>其中U ∈ R^(K× N)，V ∈ R^(K× M)，S ∈ R^(k×k)是三个分级或的矩阵。</span><span class='green'>S为对角矩阵，其对角线上是R ?</span><span class='green'>矩阵的特征值。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">197</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>然后在从R ?</span><a href='../sentence_detail/336.htm' target='right' class='orange' >中选取k个最大值组成对角阵Sk ， 同时也在V， U中找到k个最大值分别组成Uk， Vk。</a><a href='../sentence_detail/337.htm' target='right' class='red' > 将三个新矩阵重新相乘， 得：</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">198</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>(R ?</span><span class='green'>=U_K*S_K ) ?</span><span class='green'>*V_K</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">199</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>其中R ?</span><span class='green'>即为评分矩阵R的最终补全矩阵，R ?</span><span class='green'>(u，i)即为用户对物品的预测评分。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">200</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>本章小结</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">201</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>本章主要是计算特定用户给明确的物品打分， 通俗的说就是预测用户给某一物品的评分。</span><span class='green'>用户和物品之间没有直接的关系， 但是用户有过评分记录， 同时用户的好友也有评分记录，那么计算用户与物品（用户没有评分）之间的评分。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">202</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>Top-N推荐用户兴趣预测的模型</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">203</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>Top-N推荐简介</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">204</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/349.htm' target='right' class='red' >推荐系统的主要任务是为每个用户提供一个含有N件物品的推荐列表。</a><a href='../sentence_detail/350.htm' target='right' class='red' >因此，实际生产中的推荐系统在预测用户行为时通常有两步。</a><span class='green'>第一步是得到一个和用户相关的物品列表，在真正的生产中系统中包含很多件物品， 但是真正和用户相关的物品很少，我们仅仅只要基于与用户相关的物品即可；</span><a href='../sentence_detail/352.htm' target='right' class='orange' >第二步是在得到用户将会评分的列表之后，预测用户会给该物品多少评分。</a><a href='../sentence_detail/353.htm' target='right' class='red' >第一个问题也被称为Top-N推荐问题，该问题是本节研究的主要问题。</a><span class='green'>关于Top-N推荐的研究有很多。</span><a href='../sentence_detail/355.htm' target='right' class='orange' >其中协同过滤是很多生产系统中的主要算法[ ，  ]。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">205</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/356.htm' target='right' class='orange' >用户的行为数据根据是否为用户主动返回数据可将数据分为显性反馈数据， 隐形反馈数据；</a><span class='green'>显性反馈数据是用户主动返回的数据， 比如， 对物品的喜欢/不喜欢，评分， 评价等， 但是返回的数量想回来说比较少；</span><a href='../sentence_detail/358.htm' target='right' class='red' > 而对于隐形反馈数据， 隐性反馈行为指的是那些不能明确反应用户喜好的行为。</a><a href='../sentence_detail/359.htm' target='right' class='red' >最具代表性的隐性反馈行为就是页面浏览行为。</a><a href='../sentence_detail/360.htm' target='right' class='red' >凡是网站大豆有隐性反馈数据(Implicit Feedback)，这些数据存储在日志系统内。</a><a href='../sentence_detail/361.htm' target='right' class='red' >比如，在视频网站中，用户可以通过打分表示对一个视频的喜好。</a><a href='../sentence_detail/362.htm' target='right' class='red' >但是，大部分用户看完视频后并不会对视频进行评价，相反用户看了什么视频，每个视频看了多长时间，这样的数据是视频网站能够收集的主要数据，而且数据量巨大。</a><a href='../sentence_detail/363.htm' target='right' class='red' >但用户观看一个视频，并不能体现出用户对这个视频的兴趣意图，比如用户看完可能觉得不错，或者觉得不好看。</a><a href='../sentence_detail/364.htm' target='right' class='red' >文献[ ]详细对比了隐性反馈数据和显性反馈数据的优点和缺点。</a><a href='../sentence_detail/365.htm' target='right' class='red' >隐性反馈数据虽然不如显性反馈明确，但其中也蕴含着用户的兴趣信息，如果能够做出适当的挖掘，可以很好的来预测用户的兴趣和行为。</a><a href='../sentence_detail/366.htm' target='right' class='orange' >本节主要描述利用隐形反馈数据来过滤和用户有关系的物品列表， 即Top-N推荐。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">206</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>问题数学定 义和概括</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">207</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>传统Top-N推荐</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">208</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>一般的， 已下的数据集Data = {( user， item)}，其中数据集中的每个二元组( user， item)代表用户 user对物品 item产生过行为。</span><a href='../sentence_detail/370.htm' target='right' class='red' >而Top-N推荐的任务，是通过学习数据集Data，建立用户兴趣的模型，用来给每个user推荐 N件与user最相关的物品。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">209</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><span class='green'>基于时间的Top-N推荐</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">210</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/372.htm' target='right' class='orange' >用户的兴趣是随着时间变化的，并且用户的历史行为也随之增加。</a><a href='../sentence_detail/373.htm' target='right' class='red' >因此，推荐结果也需要随之实时更新他们兴趣的变化，来适应用户的新行为，来产生满足用户最新兴趣的推荐内容。</a><a href='../sentence_detail/374.htm' target='right' class='red' >因此，考虑了时间因素后，本节主要解决随着时间变化的Top-N推荐：</a><a href='../sentence_detail/375.htm' target='right' class='orange' >在一个给定的时间段内， 根据用户行为日志行为数据为用户提供满足用户兴趣的N件物品。</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">211</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/376.htm' target='right' class='red' >推荐方法-基于图模型的协同过滤算法</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">212</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/377.htm' target='right' class='orange' >利用二分图为用户行为建模。</a><a href='../sentence_detail/378.htm' target='right' class='red' >用户物品二分图定义为 G( U， I， E， w)，其中 I是物品节点集合， U是用户节点集合，</a><a href='../sentence_detail/379.htm' target='right' class='red' >若用户 u对物品 i有过行为，就存在一条边 e( vu， vi)∈ E连接用户 u的节点 vu和物品 i的节点 vi，</a><span class='green'>而行为的强度定义为边的权重 w( e)。</span><span class='green'>如图2所示， 图中定义了U1， U2， U3 和 I1， I2， I3， I4之间的关系。</span><a href='../sentence_detail/382.htm' target='right' class='orange' > 从图的左半部分我们可以看到用户和物品之间的关系；</a><span class='green'>比如 U1 和 I1， I4之间有行为；</span><span class='green'>U2对 I1， I3， I4有行为；</span><span class='green'>U3对I2， I3有行为。</span>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">213</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/386.htm' target='right' class='orange' >图 3 1用户-物品关系二分图</a>
+</p>
+</div>
+
+<div>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" width="50"><div class="shubu">214</div></td>
+<td>&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<span style="margin-left:25px"></span><a href='../sentence_detail/387.htm' target='right' class='orange' >Top-N推荐的主要任务就是找到和用户有行为的物品集；</a><span class='green'>反映到二分关系模型上就转化为了用户节点到物品节点是否存在路径， 有几条路径， 路径的度为多少；</span><span class='green'>比如，在图2中用户 U1到 I2，之间并没有直接关系，但是有 U1→ I4→ U3→ I2这条路径到达 I2，</span><span class='green'>也就是说 U1和 I2，之间有一条长短为3的关系。</span><a href='../sentence_detail/391.htm' target='right' class='orange' >计算图中顶点之间距离的算法有很多，Fouss在文[ ]中总结了很多， 我们介绍一种路径融合算法[ ]</a>
+</p>
+</div>
+
+
+<div>
+<span style="margin-left:25px"></span>
+[
+<a class="pagelink" href="paper_1.htm">首页</a>
+<a class="pagelink" href="paper_3.htm">上一页</a>
+<a class="pagelink" href="paper_5.htm">下一页</a>
+<a class="pagelink" href="paper_9.htm">尾页</a>
+页码：4/9页
+]
+</div>
+
+<br><br><br>
+<div style="margin-left:25px">
+
+<img src="../../images/guanwang.gif">
+</div>
+</div>
+
+
+<div class="zhengwencenter">
+<p>
+检测报告由<a href="http://www.paperpass.com/" target="_blank">PaperPass</a>文献相似度检测系统生成
+</p>
+<p>
+Copyright © 2007-2015 PaperPass
+</p>
+</div>
+<div style="margin-bottom:400px"></div>
+</body>
+</html>
