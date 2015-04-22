@@ -1,4 +1,4 @@
-package cst.hello;
+package cst.common;
 
 
 /**
